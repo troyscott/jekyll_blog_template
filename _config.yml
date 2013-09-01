@@ -1,0 +1,14 @@
+name: "Troy Scott"
+description: "beans & bits"
+
+url: "http://localhost:4000"
+
+paginate: 10
+
+markdown: redcarpet
+permalink: /:year/:month/:day/:title
+pygments: true
+
+repo: "https://github.com/troyscott"
+
+excerpt_separator: "&nbsp"

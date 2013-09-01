@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h2>{{ page.title }} </h2> 
+<p>{{ page.date | date_to_string }} </p>
+<div class="post" >
+{{ content }}
+</div>
+{% for category in page.categories %}
+	<a href="/categories/{{ category }}">{{ category }} </a>
+{% endfor %}

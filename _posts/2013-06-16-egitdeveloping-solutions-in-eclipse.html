@@ -1,0 +1,111 @@
+---
+layout: post
+title: EGit-Developing Solutions in Eclipse
+categories:
+- django
+- Eclipse
+- git
+- Open Source
+- python
+- source control
+tags: []
+status: publish
+type: post
+published: true
+
+meta:
+  _social_aggregated_ids: a:2:{s:7:"twitter";a:0:{}s:8:"facebook";a:0:{}}
+  _social_aggregation_log: a:10:{i:1371404061;O:8:"stdClass":1:{s:6:"manual";b:0;}i:1371407875;O:8:"stdClass":1:{s:6:"manual";b:0;}i:1371411157;O:8:"stdClass":1:{s:6:"manual";b:0;}i:1371415800;O:8:"stdClass":1:{s:6:"manual";b:0;}i:1371423612;O:8:"stdClass":1:{s:6:"manual";b:0;}i:1371438298;O:8:"stdClass":1:{s:6:"manual";b:0;}i:1371467914;O:8:"stdClass":1:{s:6:"manual";b:0;}i:1371511944;O:8:"stdClass":1:{s:6:"manual";b:0;}i:1371598727;O:8:"stdClass":1:{s:6:"manual";b:0;}i:1371772255;O:8:"stdClass":1:{s:6:"manual";b:0;}}
+---
+<p>Previous posts have walked through adding EGit to Eclipse, creating a repository on Github, cloning the repository and making the first commit.
+&nbsp;&nbsp;&nbsp;&nbsp; 
+This is enough to get you started but once you start coding the process is a little more involved than this.&nbsp; 
+Obviously new files and edits to existing files will constantly change the state of the project.&nbsp; 
+In most cases you will want to commit these changes to the git repository and then finally “push” them to a remote server like Github.&nbsp; 
+With Git the developing cycle may go something this:</p> <ul> <li>add a new files</li> <li>edit a file</li> <li>stage the new file</li> <li>commit the new file</li> <li>stage the edited file</li> <li>commit the edited file</li> <li>Push to the remote server (optional)</li></ul> <p>After adding the new file (.gitignore)&nbsp; and editing 1 file (views.py) this is what the Git Repository Explorer will look like:</p> <p>
+<table>
+<tr><td>
+<a href="/assets/uploads/2013/06/image6.png"><img title="image"  src="/assets/uploads/2013/06/image_thumb6.png" ></a>
+</tr></td>
+</table>
+
+</p> <p>There are 3 key sections in the Git Repository Explorer</p> <ol> <li>Unstaged Changes</li> <li>Staged Changes</li> <li>Commit Message</li></ol> <p>We are going to make 2 separate commits.&nbsp; In order to do this we must perform the following steps:</p> <p><strong>First Commit</strong></p> <ul> <li>Stage .gitignore by dragging the file from Unstaged (1) to Staged (2)</li> <li>Provide a commit message: initial check in</li> <li>Click the commit button 
+<table>
+<tr><td>
+<a href="/assets/uploads/2013/06/image7.png"><img title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" src="/assets/uploads/2013/06/image_thumb7.png" width="28" height="26">
+</a>
+</tr></td>
+</table>
+
+</li></ul> 
+
+<p>
+<table>
+<tr><td>
+<a href="/assets/uploads/2013/06/image8.png"><img title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" src="/assets/uploads/2013/06/image_thumb8.png" width="244" height="202"></a>
+</tr></td>
+</table>
+
+</p> 
+
+<p><strong>Second Commit</strong></p> <ul> <li>Stage views.py </li> <li>Provide as commit message: Changed output message</li> <li>Click the commit button 
+
+<table>
+<tr><td>
+<a href="/assets/uploads/2013/06/image9.png"><img title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" src="/assets/uploads/2013/06/image_thumb9.png" width="28" height="26"></a>
+</tr></td>
+</table>
+
+
+</li></ul>   
+
+<p>
+<table>
+<tr><td>
+<a href="/assets/uploads/2013/06/image10.png"><img title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" src="/assets/uploads/2013/06/image_thumb10.png" width="244" height="202"></a>
+</tr></td>
+</table>
+
+
+</p> 
+
+<p>The final but “optional” step is pushing the changes to the remote repository.&nbsp; <p>Click on the project in the Git Repository Explorer, right click and click “Push”:</p> 
+
+<p>
+<table>
+<tr><td>
+	<a href="/assets/uploads/2013/06/image11.png"><img  title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" src="/assets/uploads/2013/06/image_thumb11.png" width="159" height="244"></a>
+
+</tr></td>
+</table>
+
+</p> 
+
+<p>You should see the following menu:</p> 
+
+<p>
+<table>
+<tr><td>
+	<a href="/assets/uploads/2013/06/image12.png"><img title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" src="/assets/uploads/2013/06/image_thumb12.png" width="224" height="244"></a>
+</tr></td>
+</table>
+
+</p> 
+
+
+<p>Click next. Set the Source ref and Destination ref to master [branch] and then click Add Spec and click the check box marked “Save specifications in origin configuration”.</p> 
+
+
+<table cellspacing="0" cellpadding="2" width="400" border="0"> <tbody> <tr> <td valign="top" width="200"><a href="/assets/uploads/2013/06/image13.png"><img title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" src="/assets/uploads/2013/06/image_thumb13.png" width="244" height="205"></a></td> <td valign="top" width="200"><a href="/assets/uploads/2013/06/image14.png"><img title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" src="/assets/uploads/2013/06/image_thumb14.png" width="244" height="232"></a></td></tr></tbody></table> 
+
+
+<p>Click “Finish” and you should see output similar to this:</p> <p><br>
+
+<table>
+<tr><td>
+
+<a href="/assets/uploads/2013/06/image15.png"><img title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" src="/assets/uploads/2013/06/image_thumb15.png" width="244" height="169"></a>
+</tr></td>
+</table>
+
+</p></p>
